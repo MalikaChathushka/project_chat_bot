@@ -1,3 +1,4 @@
+# This file will contain patterns for matching user input and generating appropriate responses
 patterns = {
     r"hi|hello|hey": [
         "Hi there! How can I help you today?",
