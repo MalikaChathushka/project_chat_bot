@@ -1,3 +1,4 @@
+# This file will contain the logic for handling inputs and generating responses
 import re
 from response_patterns import patterns
 
