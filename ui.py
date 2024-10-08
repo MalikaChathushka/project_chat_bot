@@ -1,3 +1,4 @@
+# All UI releted things will align here
 def start_chat():
     print("Welcome to the Chatbot!")
     while True:
