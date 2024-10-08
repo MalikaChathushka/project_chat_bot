@@ -1,4 +1,4 @@
-# All UI releted things will align here
+# This file will handle the input/output interface for the chatbot
 def start_chat():
     print("Welcome to the Chatbot!")
     while True:
