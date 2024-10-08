@@ -1,5 +1,19 @@
-# This file will contain the logic for handling inputs and generating responses
-from response_patterns import get_response
+import re
+from response_patterns import patterns
 
-def chatbot(user_input):
-    return get_response(user_input)
+class BotLogic:
+    def __init__(self):
+        # We could load more advanced data here if needed
+        pass
+
+    def get_response(self, user_input):
+        user_input = user_input.lower()
+        for pattern, responses in patterns.items():
+            if re.search(pattern, user_input):
+                return self._select_response(responses)
+        return "Sorry, I didn't quite understand that."
+
+    def _select_response(self, responses):
+        # Randomize responses or select based on some logic
+        import random
+        return random.choice(responses)
